@@ -7,7 +7,5 @@ module.exports.createUser = async ({firstname, lastname , email, password}) => {
     }
     const user = new userModel({firstname, lastname, email, password});
     await user.save();
-    console.log("user created");
-    
     return user;
 };
